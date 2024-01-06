@@ -1,0 +1,42 @@
+.nav-bar{
+    padding: 3%;
+    display: flex;
+    justify-content: space-between;
+    width: 92%;
+}
+.brand-name p .span1{
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    /* line-height: normal; */
+}
+.brand-name p .span2{
+    text-shadow: 2px 0 2px #fff;
+    color: #41506F;
+    font-family: Poppins;
+    font-size: 30px;
+    font-style: normal;
+    font-weight:100;
+    /* line-height: normal; */
+}
+.nav-right ul
+{
+    display: flex;
+}
+.nav-right ul li{
+    color: white;
+    margin: 0px 10px;
+    text-decoration: none;
+    list-style: none;
+}
+.nav-right ul li:hover{
+    cursor: pointer;
+    color: #41506F;
+}
+@media screen and (max-width: 500px) {
+.nav-right ul li{
+    margin: 0px 5px;
+}
+}

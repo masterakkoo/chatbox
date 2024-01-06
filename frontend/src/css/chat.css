@@ -1,0 +1,142 @@
+body {
+    background-color: #fbfbfb;
+    
+  }
+  /* @media (min-width: 991.98px) {
+    main {
+      padding-left: 240px;
+    }
+  } */
+  
+  /* Sidebar */
+  /* .home-chat{
+    height: 100vh;
+    width: 100%;
+  } */
+ .home-chat{
+  
+height: 91vh;
+ }
+  .navbar1{
+    background-color: #252b3a;
+
+  }
+  /* .head1{
+  height: 6%;
+  } */
+.main-chat{
+    margin-top: 64px;
+    width: 100%;
+    height: 91vh;
+    background-color:#252b3a;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sidemenu{
+  width: 4.5%;
+  height: 100%;
+}
+.friends{
+  /* margin-left: 4.5%; */
+    background-color: #0e262d;
+    width: 25%;
+    height: 100%;
+    overflow: scroll;
+    /* overflow: sc; */
+}
+.friends::-webkit-scrollbar {
+  display: none;
+}
+
+.friends {
+  -ms-overflow-style: none;  /* IE and Edge */
+  
+}
+
+.side-friends::-webkit-scrollbar {
+  display: none;
+}
+
+.side-friends {
+  -ms-overflow-style: none;  /* IE and Edge */
+  
+}
+.chats{
+    background-color: #0e262d;
+    width: 69.5%;
+    height: 100%;
+    
+}
+
+.chats input{
+  margin: 0% 2%;
+  width: 90%;
+  /* padding: 1%; */
+  
+  bottom: 2%;
+  border-radius: 10px;
+  background-color: transparent;
+  color: #fbfbfb;
+  border: none;
+  outline: none;
+}
+.chats input:focus{
+  border-color: inherit;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+.send-btn{
+  /* padding: 1%; */
+  height: 100%;
+  margin: auto;
+  background-color: #252b3a;
+  /* width: 10%; */
+}
+.send-btn img{
+  
+  width: 35px;
+  /* height: 35px; */
+}
+
+  @media (max-width: 900px) {
+    .sidebar {
+      width: 100%;
+    }
+    .friends{
+      width: 88%;
+    }
+    .sidemenu{
+      margin: 5px;
+     width: 12%;
+    }
+    .chats{
+      display: none;
+    }
+    .send-btn img{
+      width: 31px;
+      /* height: 26px; */
+    }
+  }
+  .sidebar .active {
+    border-radius: 5px;
+    box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
+  }
+  
+  .sidebar-sticky {
+    position: relative;
+    top: 0;
+    height: calc(100vh - 48px);
+    padding-top: 0.5rem;
+    overflow-x: hidden;
+    overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+  }
+  .rounded-circle{
+    height: 25px;
+  }
+  @media (max-width: 450px) {
+    .main-chat{height: 92.9vh;}
+    
+  }

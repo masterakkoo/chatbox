@@ -1,0 +1,40 @@
+.pro1{
+    margin-top: 1%;
+    margin-left: .5%;
+    margin-right: .5%;
+    height: 8%;
+    padding: 1%;
+    border-radius: 10px;
+    /* margin: 5px; */
+}
+.chat-messages{
+    /* position: relative; */
+    background-color: #0e262d;
+    height: 84%;
+    /* margin: 8px; */
+}
+.chat-messages1{
+    height: 97%;
+}
+.inputside{
+    background-color: #252b3a;
+    height: 6%;
+    padding: 1%;
+}
+@media (max-width: 900px) {
+    .inputside{
+        background-color: #252b3a;
+        height: 6vh;
+    }
+    .pro1{
+        border-radius: 0px;
+        margin-top: 0%;
+        padding: 2px;
+        height: 10vh;
+        
+        font-size: .5rem;
+    }
+    .chat-messages{
+        height: 85vh;
+    }
+}

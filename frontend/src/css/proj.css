@@ -1,0 +1,11 @@
+.left-div{
+    
+    border-right: 2px solid black;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    
+}
+.mobile{
+    border-radius: 30px;
+    border:8px solid #355293
+}
