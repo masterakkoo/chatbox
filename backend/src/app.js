@@ -13,17 +13,24 @@ const port = 5000;
 
 const port1 = process.env.NODE_ENV === 'development' ?
     process.env.DEV_MODE : process.env.PRO_MODE
-app.use((req, res, next) => {
-    // res.set("Access-Control-Allow-Origin", '*');
-    res.setHeader('Access-Control-Allow-Origin', '*');
-    res.setHeader("Access-Control-Allow-Credentials", false);
-    res.setHeader('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE, PATCH');
-    res.setHeader('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept, Authorization');
+// app.use((req, res, next) => {
+//     // res.set("Access-Control-Allow-Origin", '*');
+//     res.setHeader('Access-Control-Allow-Origin', '*');
+//     res.setHeader("Access-Control-Allow-Credentials", false);
+//     res.setHeader('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE, PATCH');
+//     res.setHeader('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept, Authorization');
 
 
-    next()
-})
+//     next()
+// })
 
+const corsOptions = {
+  origin: "http://localhost:3000",
+  credentials: true, //access-control-allow-credentials:true
+  optionSuccessStatus: 200,
+};
+
+app.use(cors(corsOptions));
 
 
 // app.use(cors({
