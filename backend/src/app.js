@@ -10,7 +10,6 @@ const router1 = require("./routes/userRoutes")
 const router2 = require("./routes/chatRoutes")
 const router3 = require("./routes/messagesRoutes")
 const port = 5000;
-
 const port1 = process.env.NODE_ENV === 'development' ?
     process.env.DEV_MODE : process.env.PRO_MODE
 app.use((req, res, next) => {
