@@ -3,7 +3,6 @@ import "../css/login.css"
 import { json, useNavigate } from "react-router-dom";
 import { useToast } from '@chakra-ui/react'
 import { ChatState } from "./ChatProvider";
-import { useNavigate } from "react-router-dom"
 // import { useHistory } from 'react-router-dom';
 const Login = () => {
     const [loading, setLoading] = useState(false);
