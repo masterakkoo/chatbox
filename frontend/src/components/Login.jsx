@@ -3,6 +3,7 @@ import "../css/login.css"
 import { json, useNavigate } from "react-router-dom";
 import { useToast } from '@chakra-ui/react'
 import { ChatState } from "./ChatProvider";
+import { useNavigate } from "react-router-dom"
 // import { useHistory } from 'react-router-dom';
 const Login = () => {
     const [loading, setLoading] = useState(false);
@@ -103,7 +104,7 @@ const Login = () => {
                     </div>
                     <div class="btn">
                         <button class="button1" onClick={Submit}>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {(loading) ? "loading..." : "Login"}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</button>
-                        <button class="button2">Sign Up</button>
+                         <button class="button2" onClick={() => { navigate("/register") }}>Sign Up</button>
                     </div>
                     <button class="button3">Forgot Password</button>
                 </form>
